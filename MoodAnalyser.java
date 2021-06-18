@@ -5,6 +5,18 @@ package com.moodanlyzer.mood_anlyzer;
 public class MoodAnalyser 
 {
 
+	private String message;
+
+	// default constructor
+	public MoodAnalyser() {
+	}
+
+	// constructor with parameter message
+	public MoodAnalyser(String message) {
+		this.message = message;
+	}
+
+	
 	// method to analyse mood
 	public String analysemood(String message)
 	{
