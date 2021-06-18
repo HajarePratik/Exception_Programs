@@ -15,4 +15,13 @@ public class MoodAnlyzerTest
 			Assert.assertEquals("SAD", mood);
 	}
 
+	// TC 1.2 To analyse and respond happy mood
+	@Test
+	public void givenMessage_WhenHappy_ShouldReturnHappy()
+	{
+			MoodAnalyser moodAnalyser = new MoodAnalyser();
+			String mood = moodAnalyser.analysemood("I am in Happy Mood");
+			Assert.assertEquals("HAPPY", mood);
+	}
+
 }
