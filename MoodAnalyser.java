@@ -17,17 +17,21 @@ public class MoodAnalyser
 	}
 
 	
-	// method to analyse mood
-	public String analysemood(String message)
+	// method to handle the exception and analyse the mode
+	public String analysemood() 
 	{
-		if (message.contains("Sad"))
+		try 
 		{
-			return "SAD";
-		}
-		else 
+			if (message.contains("Sad"))
+			{
+					return "SAD";
+			}
+		} 
+		catch (NullPointerException e) 
 		{
 			return "HAPPY";
 		}
+		return null;
 	}
 
 }
